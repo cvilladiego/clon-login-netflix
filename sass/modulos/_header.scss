@@ -1,4 +1,4 @@
-@use './colors';
+
 @mixin header($ancho:100%, $alto:20px) {
     width: $ancho;
     height: $alto;
