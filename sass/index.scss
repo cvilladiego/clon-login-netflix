@@ -1,6 +1,47 @@
 @use './modulos/reset';
-@use './modulos/colors';
 @use './modulos/header';
+
+@mixin media {
+    
+    @media (min-width:740px) {
+        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/0ef67cc5-0aa7-47cf-87bd-7f595afc7cfb/963ba93e-6eab-41d1-8dca-4a14c64d1943/CO-es-20221107-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+        background-repeat: no-repeat;
+        background-position: fixed;
+        
+        .container__login{
+            width: 40%;
+            height: auto;
+            margin: 0 auto;
+            margin-bottom: 80px;
+            background: linear-gradient(rgba(5,7,12, 0.85),rgba(5,7,12,0.85));
+        }
+
+        footer{
+            background: linear-gradient(rgba(5,7,12, 0.85),rgba(5,7,12,0.85));
+
+        }
+
+        header{
+            background: linear-gradient(rgba(5,7,12, 0),rgba(5,7,12,0));
+
+        }
+
+        .img__header{
+            width: 166px;
+            height: 130px;
+            
+        }
+        
+        
+    }
+}
+
+
+
+body{
+    @include media();
+}
+    
 
 section{
     border-bottom: 1px solid #8c8c8c;
@@ -8,6 +49,7 @@ section{
         display: flex;
         flex-direction: column;
         width: 90%;
+        max-width: 450px;
         height: auto;
         margin: 0 auto;
 
@@ -44,7 +86,7 @@ section{
             color: #fff;
             font-size: 1.1rem;
             font-weight: 500;
-
+            cursor: pointer;
             border-style: none;
             border-radius: 5px;
         }
@@ -107,7 +149,7 @@ section{
 
             a{
                 text-decoration: none;
-                color: blue;
+                color: #0071eb;
             }
         }
     }
@@ -117,13 +159,53 @@ footer{
     .footer__login{
         display: flex;
         flex-direction: column;
+        justify-content: start;
+        align-items: start;
         width: 90%;
         margin: 0 auto;
-        width: auto;
+        height: auto;
         h5{
             font-size: 1rem;
             font-weight: 300;
             color: #8c8c8c;
+            margin-top: 30px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #8c8c8c;
+        }
+
+        .footer__login-condiciones{
+            display: grid;
+            width: 90%;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 30px;
+
+            a{
+                text-decoration: none;
+                color: #8c8c8c;
+                font-size: .8rem;
+            }
+        }
+
+        select{
+            margin-top: 35px;
+            margin-bottom: 50px;
+            padding: 10px;
+            width: 120px;
+            background-color: #000000;
+            border: 1px solid #8c8c8c;
+            color: #8c8c8c;
+            border-radius: 2px;
+        }
+
+        span{
+            color: #fff;
         }
     }
+
+  
 }

@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/index.css">
     <title>Login</title>
 </head>
 <body>
     <header>
-        <img src="./assets/img/netflix-logo.svg" alt="LOGO NETFLIX"> 
+        <img src="./assets/img/netflix-logo.svg" alt="LOGO NETFLIX" class="img__header"> 
     </header>
     
     <section>
-        <div class="container__body-login">
-            <h1>Inicia sesión</h1>
+        <div class="container__login">
+            <div class="container__body-login">
+                <h1>Inicia sesión</h1>
 
-            <form action="#" method="post">
-                <input type="text" placeholder="Email o número de telefono">
-                <input type="text" placeholder="contraseña">
-            </form>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Email o número de telefono">
+                    <input type="text" placeholder="contraseña">
+                </form>
 
-            <input class="btn__login" type="submit" value="Iniciar sesión">
+                <input class="btn__login" type="submit" value="Iniciar sesión">
 
-            <div class="container__body-subfooter">
-                <label><input type="checkbox" id="cbox1" value="first_checkbox"> Récuerdame</label>
-                <a href="#">¿Necesitas ayuda?</a>
-              
-            </div>
-
-            <div class="container__body-subscribete">
+                <div class="container__body-subfooter">
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox"> Récuerdame</label>
+                    <a href="#">¿Necesitas ayuda?</a>
                 
-                <a href="#">¿Primera vez en Netflix? <b>Suscríbete ahora.</b></a>  
-            </div>
+                </div>
 
-            <div class="container__login-text-protect">
-                <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <a href="">Más info.</a> </p>
+                <div class="container__body-subscribete">
+                    
+                    <a href="#">¿Primera vez en Netflix? <b>Suscríbete ahora.</b></a>  
+                </div>
+
+                <div class="container__login-text-protect">
+                    <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. <a href="">Más info.</a> </p>
+                </div>
+
             </div>
 
         </div>
@@ -48,8 +52,24 @@
         <div class="footer__login">
             <h5>¿Preguntas? Llama al <a href="#">01 800 000 0000</a></h5>
 
+            
+            <div class="footer__login-condiciones">
+             
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Centro de ayuda</a>
+                  <a href="#">Términos de uso</a>
+               <a href="#">Privacidad</a>
+                  <a href="#">Preferencias de cookies</a>
+                 <a href="#">Información corporativa</a>
+              
+          </div>
+          <select name="select">
+            <option value="value2" selected>Español</option>
+            <option value="value3">English</option>
+            
+        </select>
+          
 
-        </div>
     </footer>
 </body>
 </html>
