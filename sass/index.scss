@@ -1,3 +1,19 @@
 @use './modulos/reset';
 @use './modulos/colors';
 @use './modulos/header';
+
+section{
+    .container__body-login{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+        h1{
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+}

@@ -6,6 +6,7 @@
 
 body {
   font-size: 62.5%;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
   background-color: #333;
 }
 
@@ -20,6 +21,19 @@ header {
 header img {
   width: 90px;
   height: 80px;
+}
+
+section .container__body-login {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+section .container__body-login h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=index.css.map */
