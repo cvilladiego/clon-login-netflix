@@ -3,6 +3,7 @@
 @use './modulos/header';
 
 section{
+    border-bottom: 1px solid #8c8c8c;
     .container__body-login{
         display: flex;
         flex-direction: column;
@@ -14,6 +15,115 @@ section{
             color: #fff;
             font-size: 1.8rem;
             font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        form{
+            input{
+                width: 100%;
+                height: 50px;
+                padding: 10px;
+                margin-top: 20px;
+                background-color: #333;
+                border: none;
+                border-radius: 5px;
+                ::placeholder{
+                    color: #8c8c8c; 
+                }
+                
+
+            }
+        }
+
+        .btn__login{
+            margin-top: 50px;
+            padding: 10px;
+            width: 100%;
+            height: 50px;
+            background-color: #e50914;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+
+            border-style: none;
+            border-radius: 5px;
+        }
+
+        .container__body-subfooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 15px;
+
+            input{
+                width: 15px;
+                height: 15px;
+                background: #8c8c8c;
+                border-radius: 2px;
+            }
+
+            label{
+                color: #8c8c8c;
+                font-size: .9rem;
+               
+                
+            }
+
+            a{
+                text-decoration: none;
+                font-size: .9rem;
+                color: #8c8c8c;
+            }
+        }
+
+        .container__body-subscribete{
+            display: flex;
+            flex-direction: row;
+            margin-top: 8px;
+            a{
+                color:#8c8c8c;
+                text-decoration: none;
+                font-size: .9rem;
+
+
+            }
+
+            b{
+                color: #fff;
+
+            }
+             
+        }
+
+        .container__login-text-protect{
+            display: flex;
+            flex-direction: row;
+            margin-top: 8px;
+            margin-bottom: 130px;
+            p{
+                font-size: .7rem;
+                color: #8c8c8c;
+            }
+
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+        }
+    }
+}
+
+footer{
+    .footer__login{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        width: auto;
+        h5{
+            font-size: 1rem;
+            font-weight: 300;
+            color: #8c8c8c;
         }
     }
 }
