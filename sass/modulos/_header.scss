@@ -1,0 +1,23 @@
+@use './colors';
+@mixin header($ancho:100%, $alto:20px) {
+    width: $ancho;
+    height: $alto;
+    
+    
+}
+
+header{
+    @include header(100%,60px);
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    background-color: #333;
+
+
+    img{
+        width:90px;
+        height:70px;
+    }
+
+
+}
